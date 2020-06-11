@@ -1,0 +1,1 @@
+# snowflake_drop_object
