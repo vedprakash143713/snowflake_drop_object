@@ -1,0 +1,202 @@
+body {
+  background-color: Tomato;
+}
+h1 {
+  color: blue;
+  font-family: verdana;
+  font-size: 300%;
+  text-align: center;
+}
+p {
+  color: red;
+  font-family: verdana;
+  font-size: 150%;
+  text-align: center;
+}
+.login {
+  color:#c985dd;
+  font-family: verdana;
+  font-size: 150%;
+  text-align: left;
+  padding-top: 0%;
+
+}
+/* Full-width input fields */
+input[type=text], input[type=password],select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-family: verdana;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #c985dd;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: verdana;
+}
+input[type=submit]:hover {
+  opacity: 0.8;
+}
+button {
+  background-color: #c985dd;
+  color: White;
+  padding: 14px 40px;
+  border: none;
+  cursor: pointer;
+  width: auto;
+  font-family: verdana;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+}
+button:hover {
+  opacity: 0.8;
+}
+.logoutLblPos{
+   position:fixed;
+   right:10px;
+   top:5px;
+}
+.header_button{
+  background-color: #c985dd;
+  color: White;
+  top:0;
+  right:0;
+}
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: auto;
+  position:absolute;
+  top:0;
+  right:0;
+}
+/*
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+*/
+.container {
+  padding: 50px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+}
+
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 20px;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 50%;/* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+
+.close {
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: MediumSeaGreen;
+  color: white;
+  text-align: center;
+}
+
+.ul_home_nav {
+  list-style-type:none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: MediumSeaGreen;
+  position: fixed;
+  width: auto;
+}
+
+li {
+  float: left;
+  border-right:2px solid #bbb;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 24px;
+  font-family: verdana;
+}
+
+li a:hover {
+  opacity: 0.8;
+}
+
+#Create_Test_Database,
+#Drop_Database,
+#Create_User {
+  display: none;
+}
+#Drop_Database {
+  position: absolute;
+  top: 90px;
+  width: auto;
+  left: 5;
+  height: auto;
+  background: green;
+  color: white;
+  padding: 5em;
+}
+
+#Drop_Database:target {
+  display: block;
+  margin: 5% auto 10% auto;
+}
+#Drop_Database p {
+  color: yellow;
+  font-family: verdana;
+  font-size: 20px;
+  float: left;
+
+}

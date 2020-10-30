@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>SnowDrop</title>
+      <link rel="stylesheet" href="styles.css">
+   </head>
+
+   <body>
+      <header role = "banner">
+         <h1>Welcome To Drop Database Utility</h1>
+         <p>This Utility will help you to drop a GDW product created database and assosiated object.</p>
+      </header>
+
+    <button onclick="document.getElementById('id01').style.display='block'">Login</button>
+<div id="id01" class="modal">
+    <form action="home.html" class="modal-content animate login" method="POST">
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      </div>
+      <div class="container">
+        <label for="Snowflake_Username"><b>Snowflake_Username<b></label>
+        <input type="text" placeholder="Enter Username" name="Snowflake_Username" required>
+        <label for="Snowflake_Password"> Snowflake_Password</label>
+        <input type="password" placeholder="Enter Password" name="Snowflake_Password" required>
+        <label for="Snowflake_Account">Snowflake_Account</label>
+        <select id="Snowflake_Account" name="Snowflake_Account">
+          <option value="aipdev_eu_west_1">aipdev.eu-west-1</option>
+          <option value="aipdev_us_east_1">aipdev.us-east-1</option>
+          <option value="aipprod_eu_west_1">aipprod.eu-west-1</option>
+          <option value="aipprod_us_east_1">aipprod.us-east-1</option>
+        </select>
+        <input type="submit" value="Login">
+      </div>
+    </form>
+
+</div>
+<footer>
+   <p  class="footer" >Created by:- Ved Prakash</p>
+</footer>
+   </body>
+</html>
