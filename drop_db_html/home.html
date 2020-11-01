@@ -7,30 +7,37 @@
       <link rel="stylesheet" href="home_style.css">
    </head>
    <body>
-     <div class="header">
-          <h1>Welcome Snowflake Database Admin Utility</h1>
+     <div>
+       <header class="body_header">
+         <h1>Welcome Snowflake Database Admin Utility</h1>
+        </header>   
+    </div>
+    <div style="float:right">
+      <form action="index.html">
+          <input class="logoutLblPos" type="submit" value="Logout">
+      </form>
     </div>
 
-      <div style="float:right">
-        <form action="index.html">
-          <label class="logoutLblPos">
-          <input type="submit"  value="logout">
-          </label>
-        </form>
-      </div>
-    <div>
-      <ul class="ul_home_nav">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Create Test Database</a></li>
-        <li><a href="#Drop_Database">Drop Database</a></li>
-        <li><a href="#">Create User</a></li>
-      </ul>
+    <div class="topnav" id="myTopnav"> 
+      <a href="#" class="active">Home</a>
+      <a href="#">Create Test Database</a>
+      <a href="#Drop_Database">Drop Database</a>
+      <a href="#">Create User</a>
     </div>
-    <div id="Create_Test_Database">content 1 text</div>
-    <div id="Drop_Database">
-      <p>Fill in below details in order to drop the database and its object.</p>
-    </div>
-    <div id="Create_User">content 3 text</div>
+
+    <form action="/action_page.php" id="Drop_Database">
+      <div class="container_form">
+        <p id="block_para">Fill in below details in order to drop the database and its object.</p>
+        <hr>
+            <label for="Database_Name"><b>Database_Name:-</b></label>
+            <input type="text" placeholder="Enter Non Prod Database Name" name="Database_Name" id="Database_Name" required><br>
+            <label for="Warehouse_Name"><b>Warehouse_Name:-</b></label>
+            <input type="text" placeholder="Enter WareHouse Name" name="Warehouse_Name" id="Warehouse_Name" required>
+          <button type="submit" class="btn">Click To proceed</button>
+        </div>
+      </form>
+    
+
     <div class="footer">
          <p>Created by:- Ved Prakash</p>
    </div>

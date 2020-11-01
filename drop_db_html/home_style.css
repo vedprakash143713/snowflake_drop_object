@@ -1,16 +1,117 @@
 body {
-  background-color: Aqua;
+  background-color: tomato;
   font-family: verdana;
-  padding: 10px;
+
 }
 
+.body_header {
+  font-family: verdana;
+  text-align: center;
+  color: blue;
+  font-size: 0.65cm;
+}
+.logoutLblPos{
+  font-family: Verdana;
+  position: fixed;
+  right: 10Px;
+  top: 5px;
+  background-color: #4CAF50;
+  border: none;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.logoutLblPos:hover {
+  opacity: 0.8; 
+}
+
+.topnav {
+  background-color: cornsilk;
+  overflow: hidden;
+}
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color:darkblue;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: darkgreen;
+  font-size: 17px;
+}
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
 .footer {
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: MediumSeaGreen;
+  background-color:#4CAF50;;
   color: white;
   text-align: center;
   font-family: verdana;
+}
+/*
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+/*@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}*/
+
+#Create_Test_Database,
+#Drop_Database,
+#Create_User {
+  display: none;
+}
+#Drop_Database {
+  position: absolute;
+  top: 90px;
+  width: fit-content;
+  left: 5;
+  height: auto;
+  background: green;
+  color: white;
+  padding: 5em;
+  
+}
+#Drop_Database:target {
+  display: block;
+  overflow: auto;
+  width: fit-content;
+  margin: 5% auto 10% auto;
+  padding-top: 0.2cm;
+  padding-left: 0.5cm;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
 }
